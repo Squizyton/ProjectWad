@@ -4,16 +4,18 @@ namespace Player
 {
     public class GunRotation : MonoBehaviour
     {
-        
-        
-        [SerializeField]private Transform player;
-        [SerializeField]private Transform gun;
-        [SerializeField] private Transform gunHolder;
-        [SerializeField]private float _rotationSpeed;
-        
+        [SerializeField] private Transform player;
+        [SerializeField] private float offset;
+
         // Start is called before the first frame update
         // Update is called once per frame
         void Update()
+        {
+            RotateTheGun();
+            CheckForScaleChange();
+        }
+
+        void RotateTheGun()
         {
             var direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
             //get the angle
@@ -21,12 +23,12 @@ namespace Player
 
             var targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-            //rotate the gun
-            gun.rotation = Quaternion.Slerp(gun.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
-            
-            //move the gun around the player
-            
-            
+            transform.rotation = Quaternion.Euler(0f, 0f, angle + offset);
+        }
+
+        void CheckForScaleChange()
+        {
+            transform.localScale = transform.rotation.z > 0 ? new Vector3(1, -1, 1) : new Vector3(1, 1, 1);
         }
     }
 }

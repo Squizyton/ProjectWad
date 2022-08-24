@@ -4,7 +4,19 @@
     <list default="true" id="fae89162-6cc1-4969-8a49-828b9d93c15b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/GunRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/GunRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cainos/Texture/TX Props.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cainos/Texture/TX Props.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cainos/Texture/TX Tileset Grass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cainos/Texture/TX Tileset Grass.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TopDown 2D RPG BE3/App Icon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TopDown 2D RPG BE3/App Icon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TopDown 2D RPG BE3/Sprites/Tiles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TopDown 2D RPG BE3/Sprites/Tiles.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/Assault_rifle_V1.01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/Assault_rifle_V1.01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/GUN_01_[square_frame]_01_V1.00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/GUN_01_[square_frame]_01_V1.00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[32x96]Shotgun_V1.00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[32x96]Shotgun_V1.00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[32x96]Shotgun_V1.01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[32x96]Shotgun_V1.01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[NO_BOLT]_Sniper_rifle_[KAR98]_V1.00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[NO_BOLT]_Sniper_rifle_[KAR98]_V1.00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[design] Assault_rifle_V1.00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[design] Assault_rifle_V1.00.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[design]Shotgun_V1.02.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[design]Shotgun_V1.02.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[design]_Sniper_rifle_[KAR98]_V1.00.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/V1.00/PNG/[design]_Sniper_rifle_[KAR98]_V1.00.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +85,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661372474180</updated>
       <workItem from="1661372493723" duration="4000" />
-      <workItem from="1661372571308" duration="993000" />
+      <workItem from="1661372571308" duration="3588000" />
     </task>
     <servers />
   </component>
