@@ -312,6 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 760397086}
   - component: {fileID: 760397087}
+  - component: {fileID: 760397088}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -349,6 +350,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1864251284}
   offset: 0
+--- !u!114 &760397088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760397085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e115b458198a24d4cb8d1a52a1c2f832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireRate: 0
+  magazineSize: 0
+  currentMagazine: 0
+  reloadTime: 0
+  accuracy: 0
+  bulletAmount: 0
+  autoFire: 0
 --- !u!1 &1041496541
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +564,7 @@ GameObject:
   - component: {fileID: 1864251284}
   - component: {fileID: 1864251283}
   - component: {fileID: 1864251285}
+  - component: {fileID: 1864251286}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -632,6 +653,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+--- !u!114 &1864251286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864251282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1427ef3e3e6a1e24d8f3bbd6343afd18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentGun: {fileID: 760397088}
 --- !u!1 &1936531666
 GameObject:
   m_ObjectHideFlags: 0
