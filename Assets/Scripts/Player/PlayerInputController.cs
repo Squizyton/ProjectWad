@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Guns;
@@ -8,6 +9,8 @@ public class PlayerInputController : MonoBehaviour
 
     [SerializeField] private BaseGun currentGun;
 
+
+ 
 
     private void Update()
     {
@@ -24,6 +27,14 @@ public class PlayerInputController : MonoBehaviour
         {
            currentGun.Fire();
         }
+        
+        
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+            currentGun.Reload();
+        
+        
+        if(Input.GetKeyDown(KeyCode.R))
+            currentGun.Reload();
     }
 
 }
