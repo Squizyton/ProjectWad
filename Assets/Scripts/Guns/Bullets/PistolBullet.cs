@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PistolBullet : BaseBullet
 {
-    new void Start()
+    private new void Start()
     {
-        InjectAbility(AbilityType.Type.OnMove,new BasicMovement());
+        InjectAbility(AbilityType.Type.OnMove,new BasicMovement(transform, speed));
     }
 }
