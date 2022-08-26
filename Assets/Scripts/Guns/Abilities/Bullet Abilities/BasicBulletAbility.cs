@@ -10,11 +10,10 @@ public abstract class BasicBulletAbility
 
 
     public Transform bullet;
-
-
-    public abstract void OnHit(Transform hit);
-
+    
+    
+    public abstract void OnHit(Collider hit);
+    public abstract void OnHit();
     public abstract void OnTick();
-
     public abstract void OnMove();
 }
