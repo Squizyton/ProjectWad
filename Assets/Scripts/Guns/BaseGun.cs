@@ -14,7 +14,10 @@ namespace Guns
        [SerializeField] private protected int currentMagazine;
        [SerializeField] private protected float reloadTime;
        [SerializeField] private protected float accuracy;
-        
+
+       [SerializeField] private BaseBullet bullet;
+       
+       
         //Amount of bullets fired every shot
         [SerializeField]private protected int bulletAmount;
 
@@ -52,6 +55,7 @@ namespace Guns
                 _fireRateTimer = fireRate;
                 currentMagazine--;
                 Debug.Log("Firing");
+                onFire?.Invoke();
                 _canFire = false;
             }
             else
@@ -88,7 +92,7 @@ namespace Guns
         }
 
 
-        IEnumerator StartReload()
+        private IEnumerator StartReload()
         {
             //Event that is called when reloading
             onReload?.Invoke();
