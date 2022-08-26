@@ -1,19 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Guns.Abilities;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class BaseBullet : MonoBehaviour
 {
     //Bounces
-    [SerializeField] protected int bounces = 0;
-    [SerializeField] protected int maxBounces = 3;
-
+    [SerializeField,ReadOnly] protected int bounces = 0;
+    [SerializeField] protected int maxBounces = 0;
+    
 
     [SerializeField] protected GameObject bulletPrefab;
     
     //Speed
-    private protected float speed = 10;
+    [SerializeField]private protected float speed = 10;
     
     
     //Collision
@@ -54,7 +56,26 @@ public class BaseBullet : MonoBehaviour
     {
         OnMove?.Invoke();
     }
-    
-    
-    public void 
+
+
+    public void InjectAbility(AbilityType.Type type, BasicBulletAbility ability)
+    {
+        switch(type)
+        {
+            case AbilityType.Type.OnTick:
+                TickAction += ability.OnTick;
+                break;
+            case AbilityType.Type.OnHit:
+                void OnAction(Collider onCollider) => ability.OnHit(new BoxCollider());
+                OnHit += OnAction;
+                break;
+            case AbilityType.Type.OnMove:
+                OnMove = ability.OnMove;
+                break;
+            case AbilityType.Type.Passive:
+                
+                break;
+        }
+    }
+
 }
