@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class BasicBulletAbility
 {
     protected private int maxBounces;
-    protected private int speed;
+    protected private float speed;
     protected private int damage;
 
 

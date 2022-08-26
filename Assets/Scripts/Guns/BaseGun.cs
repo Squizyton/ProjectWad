@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Player;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -68,7 +69,11 @@ namespace Guns
                 Debug.Log("Firing");
                 onFire?.Invoke();
                 
-                Instantiate(bulletPrefab,bulletSpawn.transform.position);
+                //Get the rotation the bullet should be facing
+                var rotation = GunRotation.GetMousePosition() - transform.position;
+                
+                
+                Instantiate(bulletPrefab,bulletSpawn.transform.position, Quaternion.LookRotation(rotation, Vector3.up));
                 _canFire = false;
             }
             else

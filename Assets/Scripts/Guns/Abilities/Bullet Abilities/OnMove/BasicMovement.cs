@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class BasicMovement : BasicBulletAbility
 {
-    
+
+    public BasicMovement(Transform transform, float speed)
+    {
+        bullet = transform;    
+        this.speed = speed;
+    }
+
     public override void OnHit(Collider hit)
     {
         throw new System.NotImplementedException();
@@ -22,6 +28,7 @@ public class BasicMovement : BasicBulletAbility
 
     public override void OnMove()
     {
-       Debug.Log("Moving with Basic Movement");
+        //Move the bullet
+      bullet.transform.position += bullet.transform.forward * (speed * Time.deltaTime);
     }
 }

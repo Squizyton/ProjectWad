@@ -30,5 +30,11 @@ namespace Player
         {
             transform.localScale = transform.rotation.z > 0 ? new Vector3(1, -1, 1) : new Vector3(1, 1, 1);
         }
+        
+        public static Vector3 GetMousePosition()
+        {
+            //TODO DONT USE CAMERA.MAIN. CHANGE THIS ASAP
+            return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
     }
 }
