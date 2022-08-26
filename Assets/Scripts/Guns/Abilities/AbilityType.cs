@@ -1,15 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class AbilityType : MonoBehaviour
+namespace Guns.Abilities
 {
-    public enum Type
+    public static class AbilityType
     {
-    OnHit,
-    OnDeath,
-    OnFire,
-    OnReload,
-    OnMove,
+        public enum Type
+        {
+            OnHit,
+            OnDeath,
+            OnFire,
+            OnReload,
+            OnMove,
+            OnTick,
+            Passive,
+        }
     }
 }
