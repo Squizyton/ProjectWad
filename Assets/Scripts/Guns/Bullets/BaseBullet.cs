@@ -47,6 +47,12 @@ public class BaseBullet : MonoBehaviour
         
         for (var i = 0; i < collideAmountMax; i++)
         {
+            
+            
+            if (!hitColliders[i]) return;
+            
+            Debug.Log(hitColliders[i]);
+            
             OnHit?.Invoke(hitColliders[i]);
             bounces--;
         }
