@@ -11,7 +11,7 @@ public class BaseBullet : MonoBehaviour
     [SerializeField, ReadOnly] protected int bounces = 0;
     [SerializeField] protected int maxBounces = 0;
 
-
+    [SerializeField] protected int baseDamage = 0;
     [SerializeField] protected GameObject bulletPrefab;
 
     //Speed
@@ -25,9 +25,9 @@ public class BaseBullet : MonoBehaviour
     //Actions
 
     //Action that happens every update
-    private protected Action TickAction;
-    private protected Action<Collider> OnHit;
-    private protected Action OnMove;
+    private Action TickAction;
+    private Action<Collider> OnHit;
+    private Action OnMove;
 
 
     protected virtual void Start()
