@@ -8,34 +8,34 @@ using UnityEngine;
 public class BaseBullet : MonoBehaviour
 {
     //Bounces
-    [SerializeField,ReadOnly] protected int bounces = 0;
+    [SerializeField, ReadOnly] protected int bounces = 0;
     [SerializeField] protected int maxBounces = 0;
-    
+
 
     [SerializeField] protected GameObject bulletPrefab;
-    
+
     //Speed
-    [SerializeField]private protected float speed = 10;
-    
-    
+    [SerializeField] private protected float speed = 10;
+
+
     //Collision
     private protected int collideAmountMax = 1;
-    
-    
+
+
     //Actions
-    
+
     //Action that happens every update
-   private protected Action TickAction;
-   private protected Action<Collider> OnHit;
-   private protected Action OnMove;
+    private protected Action TickAction;
+    private protected Action<Collider> OnHit;
+    private protected Action OnMove;
 
 
-   protected virtual void Start()
-   {
-       bounces = maxBounces;
-   }
+    protected virtual void Start()
+    {
+        bounces = maxBounces;
+    }
 
-   public virtual void Update()
+    public virtual void Update()
     {
         //The Tick Action is called every update
         TickAction?.Invoke();
@@ -44,23 +44,29 @@ public class BaseBullet : MonoBehaviour
 
         //Does not generate Garbage. Which is good
         var numColliders = Physics.OverlapSphereNonAlloc(transform.position, 0.1f, hitColliders);
-        
+
         for (var i = 0; i < collideAmountMax; i++)
         {
-            
-            
             if (!hitColliders[i]) return;
-            
+
             Debug.Log(hitColliders[i]);
-            
+
             OnHit?.Invoke(hitColliders[i]);
-            
-            if(bounces> 0)
+
+            //
+            if (bounces > 0)
+            {
                 bounces--;
+                // Rotate the bullet to a random direction
+                var randomRotation = Quaternion.Euler(0, 0, UnityEngine.Random.Range(0, 360));
+            }
             else
+            {
                 Destroy(gameObject);
+            }
         }
     }
+
 
     public void FixedUpdate()
     {
@@ -68,9 +74,9 @@ public class BaseBullet : MonoBehaviour
     }
 
 
-    public void InjectAbility(AbilityType.Type type, BasicBulletAbility ability)
+    public void InjectAbility(AbilityType.Type type, BaseBulletAbility ability)
     {
-        switch(type)
+        switch (type)
         {
             case AbilityType.Type.OnTick:
                 TickAction += ability.OnTick;
@@ -83,9 +89,8 @@ public class BaseBullet : MonoBehaviour
                 OnMove = ability.OnMove;
                 break;
             case AbilityType.Type.Passive:
-                
+
                 break;
         }
     }
-
 }

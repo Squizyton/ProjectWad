@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae89162-6cc1-4969-8a49-828b9d93c15b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TestBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TestBullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/BasicBulletAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/BaseBulletAbility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/BasicBulletAbility.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/BaseBulletAbility.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnMove/BasicMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnMove/BaseMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnMove/BasicMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnMove/BaseMovement.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/BaseGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/BaseGun.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/GunRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/GunRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/BaseBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/BaseBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/PistolBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/PistolBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +24,10 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/AbilityType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/BasicBulletAbility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/BaseBulletAbility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Guns/Actual Guns/Pistol.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/BaseBullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers/DestroyTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/GunRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RunGunPewPew/Assets/Scripts/Player/PlayerInteraction.cs" root0="SKIP_HIGHLIGHTING" />
@@ -31,12 +41,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Dojk9NTjRt8HAHPoiWz9N2iagS" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -89,7 +103,8 @@
       <workItem from="1661531534080" duration="11908000" />
       <workItem from="1661713074404" duration="1031000" />
       <workItem from="1661733371658" duration="1140000" />
-      <workItem from="1661734554500" duration="1880000" />
+      <workItem from="1661734554500" duration="5110000" />
+      <workItem from="1661811012142" duration="1838000" />
     </task>
     <servers />
   </component>
@@ -111,6 +126,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

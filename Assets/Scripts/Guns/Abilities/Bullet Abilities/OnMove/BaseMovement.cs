@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicMovement : BasicBulletAbility
+public class BaseMovement : BaseBulletAbility
 {
     private Vector3 direction;
 
-    public BasicMovement(Transform transform, float speed, Vector3 direction)
+    public BaseMovement(Transform transform, float speed, Vector3 direction)
     {
         bullet = transform;    
         this.speed = speed;

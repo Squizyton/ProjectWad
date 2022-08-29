@@ -67,28 +67,30 @@ namespace Guns
                 _fireRateTimer = fireRate;
                 currentMagazine--;
                 onFire?.Invoke();
-                
-                //Get the rotation the bullet should be facing
-                
-                
-                
-                var spawnedBullet = Instantiate(bulletPrefab,bulletSpawn.transform.position, Quaternion.identity);
-               
-                //rotate the bullet towards the mouse on z-axis
-               
-                //TODO: make this neater
-                var mousePos = GunRotation.GetMousePosition();
-                var direction = (mousePos - bulletSpawn.position).normalized;
-                var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-               
-                spawnedBullet.transform.rotation =Quaternion.Euler(new Vector3(0,0,angle + 270));
-                
+                Shoot();
                 _canFire = false;
             }
             else
             {
                 Debug.Log("Out of ammo");
             }
+        }
+
+
+
+        public void Shoot()
+        {
+               
+            var spawnedBullet = Instantiate(bulletPrefab,bulletSpawn.transform.position, Quaternion.identity);
+               
+            //rotate the bullet towards the mouse on z-axis
+               
+            //TODO: make this neater
+            var mousePos = GunRotation.GetMousePosition();
+            var direction = (mousePos - bulletSpawn.position).normalized;
+            var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+               
+            spawnedBullet.transform.rotation =Quaternion.Euler(new Vector3(0,0,angle + 270));
         }
 
         public virtual void Reload()
@@ -119,6 +121,9 @@ namespace Guns
         }
 
 
+        
+        
+        
         private IEnumerator StartReload()
         {
             //Event that is called when reloading
