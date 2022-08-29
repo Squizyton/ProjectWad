@@ -4,9 +4,9 @@ using UnityEngine;
 
 public abstract class BasicBulletAbility
 {
-    protected private int maxBounces;
-    protected private float speed;
-    protected private int damage;
+    protected int maxBounces;
+    protected float speed;
+    protected int damage;
 
 
     public Transform bullet;

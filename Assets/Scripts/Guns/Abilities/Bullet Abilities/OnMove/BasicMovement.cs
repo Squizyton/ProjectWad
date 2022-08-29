@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class BasicMovement : BasicBulletAbility
 {
+    private Vector3 direction;
 
-    public BasicMovement(Transform transform, float speed)
+    public BasicMovement(Transform transform, float speed, Vector3 direction)
     {
         bullet = transform;    
         this.speed = speed;
+      
     }
 
     public override void OnHit(Collider hit)
@@ -28,7 +30,8 @@ public class BasicMovement : BasicBulletAbility
 
     public override void OnMove()
     {
+
         //Move the bullet
-      bullet.transform.position += bullet.transform.forward * (speed * Time.deltaTime);
+        bullet.transform.Translate(Vector3.up * (speed * Time.deltaTime));
     }
 }

@@ -14,17 +14,17 @@ namespace Guns
         [Title("Magazine Size")] [SerializeField]
         private protected int magazineSize;
 
-        [SerializeField] private protected int currentMagazine;
+        [SerializeField,ReadOnly] private protected int currentMagazine;
         
         [Title("Reload Time")]
-        [SerializeField] private protected float reloadTime;
+        [SerializeField] private float reloadTime;
         
         [Title("Accuracy/Heat")]
-        [SerializeField] private protected float accuracy;
+        [SerializeField] private  float accuracy;
 
         [Title("Bullet Prefab")] [SerializeField]
         private Transform bulletSpawn;
-        [SerializeField] private protected GameObject bulletPrefab;
+        [SerializeField] private GameObject bulletPrefab;
         [SerializeField,ReadOnly] private BaseBullet bullet;
 
 
@@ -32,10 +32,10 @@ namespace Guns
         //Amount of bullets fired every shot
         [SerializeField] private protected int bulletAmount;
 
-        private protected Action onFire;
-        private protected Action onReload;
-        private protected Action onEmpty;
-        private protected Action onSwitch;
+        private Action onFire;
+        private Action onReload;
+        private Action onEmpty;
+        private Action onSwitch;
 
 
         //public variables
@@ -66,14 +66,21 @@ namespace Guns
             {
                 _fireRateTimer = fireRate;
                 currentMagazine--;
-                Debug.Log("Firing");
                 onFire?.Invoke();
                 
                 //Get the rotation the bullet should be facing
-                var rotation = GunRotation.GetMousePosition() - transform.position;
                 
                 
-                Instantiate(bulletPrefab,bulletSpawn.transform.position, Quaternion.LookRotation(rotation, Vector3.up));
+                
+                var spawnedBullet = Instantiate(bulletPrefab,bulletSpawn.transform.position, Quaternion.identity);
+               
+                //rotate the bullet towards the mouse on z-axis
+                var mousePos = GunRotation.GetMousePosition();
+                var direction = (mousePos - bulletSpawn.position).normalized;
+                var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                Debug.Log(angle);
+                spawnedBullet.transform.rotation =Quaternion.Euler(new Vector3(0,0,angle + 270));
+                
                 _canFire = false;
             }
             else

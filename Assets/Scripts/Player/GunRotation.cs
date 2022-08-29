@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Player
@@ -6,9 +7,19 @@ namespace Player
     {
         [SerializeField] private Transform player;
         [SerializeField] private float offset;
+        [SerializeField]private Camera gameCamera;
 
+        private static Camera staticCamera;
+        private static Vector3 position;
         // Start is called before the first frame update
         // Update is called once per frame
+
+        private void Start()
+        {
+            staticCamera = gameCamera;
+            
+        }
+
         void Update()
         {
             RotateTheGun();
@@ -24,6 +35,7 @@ namespace Player
             var targetRotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
             transform.rotation = Quaternion.Euler(0f, 0f, angle + offset);
+            position = transform.position;
         }
 
         void CheckForScaleChange()
@@ -34,7 +46,12 @@ namespace Player
         public static Vector3 GetMousePosition()
         {
             //TODO DONT USE CAMERA.MAIN. CHANGE THIS ASAP
-            return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            return staticCamera.ScreenToWorldPoint(Input.mousePosition);
+        }
+        
+        public static Vector3 GetGunPosition()
+        {
+            return position;
         }
     }
 }
