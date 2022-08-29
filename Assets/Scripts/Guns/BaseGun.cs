@@ -75,10 +75,12 @@ namespace Guns
                 var spawnedBullet = Instantiate(bulletPrefab,bulletSpawn.transform.position, Quaternion.identity);
                
                 //rotate the bullet towards the mouse on z-axis
+               
+                //TODO: make this neater
                 var mousePos = GunRotation.GetMousePosition();
                 var direction = (mousePos - bulletSpawn.position).normalized;
                 var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-                Debug.Log(angle);
+               
                 spawnedBullet.transform.rotation =Quaternion.Euler(new Vector3(0,0,angle + 270));
                 
                 _canFire = false;

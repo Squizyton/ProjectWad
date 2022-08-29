@@ -45,7 +45,6 @@ namespace Player
         
         public static Vector3 GetMousePosition()
         {
-            //TODO DONT USE CAMERA.MAIN. CHANGE THIS ASAP
             return staticCamera.ScreenToWorldPoint(Input.mousePosition);
         }
         
