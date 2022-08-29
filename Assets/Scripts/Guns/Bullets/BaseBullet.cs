@@ -54,7 +54,11 @@ public class BaseBullet : MonoBehaviour
             Debug.Log(hitColliders[i]);
             
             OnHit?.Invoke(hitColliders[i]);
-            bounces--;
+            
+            if(bounces> 0)
+                bounces--;
+            else
+                Destroy(gameObject);
         }
     }
 
