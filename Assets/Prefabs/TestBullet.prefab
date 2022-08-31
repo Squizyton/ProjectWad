@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 8321633475209611980}
   - component: {fileID: 8321633475209611977}
   - component: {fileID: 5211456918339291771}
+  - component: {fileID: 1533975302}
   m_Layer: 0
   m_Name: TestBullet
   m_TagString: Untagged
@@ -202,8 +203,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounces: 0
   maxBounces: 0
+  baseDamage: 0
   bulletPrefab: {fileID: 0}
   speed: 10
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  recipe: {fileID: 11400000, guid: e2af51f2bfe72fd4cb4e6d2840167c48, type: 2}
 --- !u!114 &5211456918339291771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,4 +222,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fbc9cceecb6544439cb7122625ff107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDestroy: 2
+  timeToDestroy: 4
+--- !u!50 &1533975302
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8321633475209611981}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0

@@ -6,11 +6,10 @@ public class BaseMovement : BaseBulletAbility
 {
     private Vector3 direction;
 
-    public BaseMovement(Transform transform, float speed, Vector3 direction)
+    public BaseMovement(Transform transform, float speed)
     {
         bullet = transform;    
         this.speed = speed;
-      
     }
 
     public override void OnHit(Collider hit)
