@@ -72,7 +72,7 @@ namespace Guns
             }
             else
             {
-                Debug.Log("Out of ammo");
+                //Make a reload click sound
             }
         }
 

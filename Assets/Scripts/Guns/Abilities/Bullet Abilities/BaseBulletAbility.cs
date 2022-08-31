@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class BaseBulletAbility
+
+[System.Serializable]
+public abstract class BaseBulletAbility 
 {
     protected int maxBounces;
     protected float speed;
@@ -10,8 +12,17 @@ public abstract class BaseBulletAbility
 
 
     public Transform bullet;
-    
-    
+
+    public BaseBulletAbility()
+    {
+    }
+
+    public BaseBulletAbility(Transform bullet)
+    {
+        this.bullet = bullet;
+    }
+
+
     public abstract void OnHit(Collider hit);
     public abstract void OnHit();
     public abstract void OnTick();
