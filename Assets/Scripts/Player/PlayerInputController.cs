@@ -19,17 +19,17 @@ public class PlayerInputController : MonoBehaviour
         {
             if (Input.GetMouseButton(0))
             {
-                currentGun.Fire();
+                PlayerInventory.instance.GetCurrentGun().Fire();
 
             }
         }
         else if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-           currentGun.Fire();
+            PlayerInventory.instance.GetCurrentGun().Fire();
         }
         
         if(Input.GetKeyDown(KeyCode.R))
-            currentGun.Reload();
+            PlayerInventory.instance.GetCurrentGun().Reload();
     }
 
 }
