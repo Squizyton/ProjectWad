@@ -17,6 +17,8 @@ public class BaseBullet : MonoBehaviour
     //Speed
     [SerializeField] private protected float speed = 10;
 
+    //LayerMask
+    [SerializeField] protected LayerMask layerMask;
 
     //Collision
     private protected int collideAmountMax = 1;
@@ -26,7 +28,7 @@ public class BaseBullet : MonoBehaviour
 
     //Action that happens every update
     private Action TickAction;
-    private Action<Collider> OnHit;
+    private Action<Collider2D> OnHit;
     private Action OnMove;
 
 
@@ -40,10 +42,10 @@ public class BaseBullet : MonoBehaviour
         //The Tick Action is called every update
         TickAction?.Invoke();
         //Collision detection
-        var hitColliders = new Collider[collideAmountMax];
+        var hitColliders = new Collider2D[collideAmountMax];
 
         //Does not generate Garbage. Which is good
-        var numColliders = Physics.OverlapSphereNonAlloc(transform.position, 0.1f, hitColliders);
+        var numColliders = Physics2D.OverlapCircleNonAlloc(transform.position, 0.1f, hitColliders, layerMask);
 
         for (var i = 0; i < collideAmountMax; i++)
         {
@@ -82,7 +84,7 @@ public class BaseBullet : MonoBehaviour
                 TickAction += ability.OnTick;
                 break;
             case AbilityType.Type.OnHit:
-                void OnAction(Collider onCollider) => ability.OnHit(new BoxCollider());
+                void OnAction(Collider2D onCollider) => ability.OnHit(new Collider());
                 OnHit += OnAction;
                 break;
             case AbilityType.Type.OnMove:
