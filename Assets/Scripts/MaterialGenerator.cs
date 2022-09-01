@@ -16,6 +16,11 @@ public class MaterialGenerator : MonoBehaviour
     [Title("Bounds")]
     [SerializeField]private BoxCollider2D bounds;
 
+    [Title("Materials")] public List<BaseMaterial> materials;
+    
+    [Title("Container")]
+    [SerializeField] private Transform container;
+    
     //Generation will change
     [Title("Testing Variables")] public GameObject testPrefab;
     private void Start()
@@ -31,8 +36,24 @@ public class MaterialGenerator : MonoBehaviour
         //TODO: Change Generation to something more interesting
         for(var i = 0; i < spawnAmount; i++)
         {
-            var go = Instantiate(testPrefab, new Vector3(Random.Range(bounds.bounds.min.x, bounds.bounds.max.x), Random.Range(bounds.bounds.min.y, bounds.bounds.max.y), 0), Quaternion.identity);
+
+            var randomPosition = new Vector3(Random.Range(bounds.bounds.min.x, bounds.bounds.max.x),
+                Random.Range(bounds.bounds.min.y, bounds.bounds.max.y),0);
+            var go = Instantiate(testPrefab, randomPosition,
+                Quaternion.identity, container);
         }
+    }
+
+    private void DestroyAllMaterials()
+    {
+        
+    }
+
+    [ContextMenu("Regenerate")]
+    public void Regenerate()
+    {
+        DestroyAllMaterials();
+        SpawnMaterials();
     }
 }
 
