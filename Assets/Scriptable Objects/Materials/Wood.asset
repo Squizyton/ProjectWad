@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e08762cbece98841b5022ec80885143, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
-  materialName: 
-  materialDescription: 
-  materialIcon: {fileID: 0}
+  materialName: Wood
+  materialDescription: It's wood
+  materialIcon: {fileID: -1211489429, guid: b2fd51ea29142a44ab918d51e47b2492, type: 3}
   materialAmountPerStack: {x: 1, y: 3}
   weight: 0.654
