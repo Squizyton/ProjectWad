@@ -30,15 +30,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  recipeName: 
+  recipeName: Basic Movement
   ingredientsList:
-  - material: {fileID: 0}
-    amount: 0
-  - material: {fileID: 0}
-    amount: 0
-  - material: {fileID: 0}
-    amount: 0
-  - material: {fileID: 0}
-    amount: 0
   - material: {fileID: 0}
     amount: 0
