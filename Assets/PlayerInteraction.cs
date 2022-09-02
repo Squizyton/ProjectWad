@@ -9,7 +9,19 @@ public class PlayerInteraction : MonoBehaviour
     private Collider2D _previousColliders;
     
     private IInteractable _currentInteractable;
-    
+    [SerializeField]private CanvasGroup _canvasGroup;
+
+    private void Update()
+    {
+        if (_currentInteractable != null)
+        {
+            _canvasGroup.alpha = 1;
+        }else if(_canvasGroup.alpha > 0)
+        {
+            _canvasGroup.alpha -= Time.deltaTime;
+        }
+    }
+
     //TODO: Should this be a normal OnTriggerEnter2D or OverlapCircle??
     private void OnTriggerEnter2D(Collider2D other)
     {
