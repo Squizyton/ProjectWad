@@ -2341,8 +2341,9 @@ TextureImporter:
       resources_basic_60: 2138641974
       resources_basic_79: 2116078950
       resources_basic_71: 547674769
-      resources_basic_80: 1577129742
+      resources_basic_84: -780268
       resources_basic_34: -432253355
+      resources_basic_80: 1577129742
       resources_basic_58: -1291212673
       resources_basic_6: -1211489429
       resources_basic_68: 750247852
@@ -2350,17 +2351,16 @@ TextureImporter:
       resources_basic_0: -484005623
       resources_basic_92: 126670023
       resources_basic_12: 769086365
+      resources_basic_73: 1850182685
       resources_basic_43: -103196593
       resources_basic_39: 273205496
       resources_basic_62: 2049155217
       resources_basic_61: -2055466384
       resources_basic_72: -978099391
-      resources_basic_73: 1850182685
       resources_basic_14: 624965827
       resources_basic_25: 1909144031
       resources_basic_18: -2142915504
       resources_basic_85: -1892840267
-      resources_basic_84: -780268
       resources_basic_15: -778002671
       resources_basic_48: -42462327
       resources_basic_97: 266471583
@@ -2390,9 +2390,9 @@ TextureImporter:
       resources_basic_66: -1611780987
       resources_basic_53: 1663642617
       resources_basic_50: -976724259
+      resources_basic_82: 650672160
       resources_basic_32: -241047650
       resources_basic_64: -2009526562
-      resources_basic_82: 650672160
       resources_basic_89: 1456817767
       resources_basic_3: 1143327835
       resources_basic_98: -12162189
