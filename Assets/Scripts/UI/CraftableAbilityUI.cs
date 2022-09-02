@@ -32,9 +32,9 @@ public class CraftableAbilityUI : MonoBehaviour
       foreach (var ingredient in recipe.ingredientsList)
       {
          var newMaterial = Instantiate(materialPrefab, neededMaterialsGroup);
-         newMaterial.TryGetComponent(out TextMeshProUGUI amountText);
+        var amountText= newMaterial.GetComponentInChildren<TextMeshProUGUI>();
          amountText.SetText(ingredient.amount.ToString());
-         newMaterial.TryGetComponent(out Image materialImage);
+         var materialImage = newMaterial.GetComponentInChildren<Image>();
          materialImage.sprite = ingredient.material.materialIcon;
       }
    }

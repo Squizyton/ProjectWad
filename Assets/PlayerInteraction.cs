@@ -13,6 +13,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update()
     {
+      
         if (_currentInteractable != null)
         {
             _canvasGroup.alpha = 1;
@@ -20,12 +21,18 @@ public class PlayerInteraction : MonoBehaviour
         {
             _canvasGroup.alpha -= Time.deltaTime;
         }
+        
+        if(_currentInteractable != null)
+            if(Input.GetKeyDown(KeyCode.F))
+                _currentInteractable.OnInteract();
     }
 
     //TODO: Should this be a normal OnTriggerEnter2D or OverlapCircle??
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.layer != interactionMask.value) return;
+        Debug.Log(other.gameObject.layer);
+        
+        if(!other.gameObject.layer.Equals(7)) return;
         
         if(other.TryGetComponent(out IInteractable interactable))
             _currentInteractable = interactable;
@@ -33,7 +40,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other.gameObject.layer != interactionMask.value) return;
+       
 
         if (!other.TryGetComponent(out IInteractable interactable)) return;
         
