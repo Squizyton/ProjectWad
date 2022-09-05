@@ -28,7 +28,11 @@ public class BaseBullet : MonoBehaviour
 
     //Action that happens every update
     private Action TickAction;
+    
+    
+    
     private Action<Collider2D> OnHit;
+    
     private Action OnMove;
 
 

@@ -17,13 +17,13 @@ public class AbilitiesManager : MonoBehaviour
    private List<CraftingRecipe> usedRecipes = new ();
 
 
-   private void Start()
+   private void Awake()
    {
       Instance = this;
    }
 
    public CraftingRecipe GetRandomRecipe()
    {
-      return craftingRecipes[Random.Range(0, craftingRecipes.Count)];
+      return craftingRecipes[0];
    }
 }

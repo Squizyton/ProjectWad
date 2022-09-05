@@ -23,8 +23,7 @@ public class CraftableAbilityUI : MonoBehaviour
    public void InjectInfo(CraftingRecipe newRecipe)
    {
       recipe = newRecipe;
-      recipeName = recipe.recipeName;
-
+      recipeNameText.SetText(recipe.recipeName);
       CreateMaterials();
    }
    void CreateMaterials()
@@ -33,6 +32,7 @@ public class CraftableAbilityUI : MonoBehaviour
       {
          var newMaterial = Instantiate(materialPrefab, neededMaterialsGroup);
         var amountText= newMaterial.GetComponentInChildren<TextMeshProUGUI>();
+        
          amountText.SetText(ingredient.amount.ToString());
          var materialImage = newMaterial.GetComponentInChildren<Image>();
          materialImage.sprite = ingredient.material.materialIcon;
