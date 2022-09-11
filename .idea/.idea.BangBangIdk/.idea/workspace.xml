@@ -2,30 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae89162-6cc1-4969-8a49-828b9d93c15b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/PipelienAsset.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PipelienAsset.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PipelienAsset_Renderer.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/PipelienAsset_Renderer.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/CraftingTable.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/CraftingTable.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/PixelOutline.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/PixelOutline.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/PixelOutline.shadergraph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Shaders/PixelOutline.shadergraph.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TestBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TestBullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/MaterialUIPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/MaterialUIPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteraction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteraction.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/BaseBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/BaseBullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/PistolBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/PistolBullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/AbilitiesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AbilitiesManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CraftableAbilityUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CraftableAbilityUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/TX Village Props.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/TX Village Props.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/PixelOutline.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/PixelOutline.shadergraph" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +20,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/PlayerInteraction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Crafting/CraftingRecipe.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/AbilityType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/BaseBulletAbility.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,10 +29,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers/DestroyTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactables/CraftingTable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/ICraftingRecipe.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IPickupable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/AbilitiesManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Materials/BaseMaterial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickupable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/GunRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInventory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RunGunPewPew/Assets/Scripts/Player/PlayerInteraction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RunGunPewPew/Assets/Scripts/Weapons/Bullets/PistolBullet.cs" root0="SKIP_HIGHLIGHTING" />
@@ -130,7 +116,8 @@
       <workItem from="1661894775290" duration="8573000" />
       <workItem from="1662065123178" duration="11895000" />
       <workItem from="1662249417524" duration="1994000" />
-      <workItem from="1662416965685" duration="1480000" />
+      <workItem from="1662416965685" duration="6718000" />
+      <workItem from="1662425211364" duration="1000" />
     </task>
     <servers />
   </component>

@@ -13,8 +13,8 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField]private CanvasGroup _canvasGroup;
 
     [Title("Pick Up Variable")]
-    [SerializeField]private float pickUpRange;
-    private float basePickUpRange;
+    [SerializeField,ReadOnly]private float pickUpRange;
+    [SerializeField]private float basePickUpRange;
     [SerializeField]private LayerMask pickUpMask;
     private const int MaxColliders = 99;
 
@@ -27,13 +27,15 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update()
     {
-    
+        
         //Pickup-----
         var colliders = new Collider2D[MaxColliders];
         var colliderCount = Physics2D.OverlapCircleNonAlloc(transform.position, pickUpRange, colliders, pickUpMask);
         for(var i = 0; i < colliderCount; i++)
         {
+            
             var obj = colliders[i];
+            Debug.Log(obj.name);
             //TryGetComponent is better than GetComponent. Due to memory allocation
             obj.TryGetComponent<IPickupable>(out var pickup);
             pickup?.Pickup(transform);
