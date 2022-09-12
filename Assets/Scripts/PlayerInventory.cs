@@ -10,14 +10,19 @@ public class PlayerInventory : SerializedMonoBehaviour
     public static PlayerInventory instance;
 
     [SerializeField] private BaseGun currentGun;
-
+    [SerializeField] private int currentExp;
+    [SerializeField] private int currentLevel;
+    [SerializeField] private int neededExp;
     [SerializeField] private Dictionary<BaseMaterial, int> materials = new();
+    private Action onExpGet;
     private void Awake()
     {
         instance = this;
+        currentLevel = 1;
+        UIManager.instance.SetLevelText(currentLevel);
+        UIManager.instance.SetExpSliderMax(neededExp);
     }
-    
-    
+
     public BaseGun GetCurrentGun()
     {
         return currentGun;
@@ -33,5 +38,28 @@ public class PlayerInventory : SerializedMonoBehaviour
         {
             materials.Add(material, amount);
         }
+    }
+    
+    public void RemoveMaterial(BaseMaterial material, int amount)
+    {
+        if(materials.ContainsKey(material))
+        {
+            materials[material] -= amount;
+        }
+    }
+    
+    public void GetExperience(int amount)
+    {
+        currentExp += amount;
+
+        if (currentExp >= neededExp)
+        {
+            Debug.Log("level up");
+            currentLevel++;
+            UIManager.instance.SetLevelText(currentLevel);
+            neededExp = (int)(neededExp * 1.5f);
+        }
+        
+        UIManager.instance.SetExpSlider(currentExp);
     }
 }
