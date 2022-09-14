@@ -2,14 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae89162-6cc1-4969-8a49-828b9d93c15b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Material Generators.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Material Generators/StoneMaterialGenerator.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Material Generators/StoneMaterialGenerator.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials/StonePickup.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials/StonePickup.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials/WoodMaterial.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials/WoodMaterial.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/SlowFast Movement.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/SlowFast Movement.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Materials/Stone.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Materials/Stone.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactables/MaterialSource.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactables/MaterialSource.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pickupables/MaterialPickup.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pickupables/MaterialPickup.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteraction.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerInteraction.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/CraftableUIPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CraftableUIPrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/Basic Movement Recipe.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/Basic Movement Recipe.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/CraftingRecipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/CraftingRecipe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/BaseGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/BaseGun.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/BaseBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/BaseBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/PistolBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/PistolBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/AbilitiesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AbilitiesManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MaterialGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MaterialGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/Pickupable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pickupables/Pickupable.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Shaders/PixelOutline.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shaders/PixelOutline.shadergraph" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CraftableAbilityUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CraftableAbilityUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CraftingUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CraftingUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cainos/Prefab/Plant/PF Props Tree T2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cainos/Prefab/Plant/PF Props Tree T2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +58,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interfaces/IPickupable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/AbilitiesManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Materials/BaseMaterial.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickupable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pickupables/MaterialPickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/GunRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInputController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -118,6 +144,8 @@
       <workItem from="1662249417524" duration="1994000" />
       <workItem from="1662416965685" duration="6718000" />
       <workItem from="1662425211364" duration="1000" />
+      <workItem from="1663006320114" duration="4707000" />
+      <workItem from="1663100870760" duration="7667000" />
     </task>
     <servers />
   </component>

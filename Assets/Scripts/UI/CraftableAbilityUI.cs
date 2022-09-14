@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Button = UnityEngine.UI.Button;
 
 public class CraftableAbilityUI : MonoBehaviour
 {
    [SerializeField] private CraftingRecipe recipe;
 
-   
+   [SerializeField] private Button button;
    [SerializeField] private Transform neededMaterialsGroup;
    [SerializeField] private GameObject materialPrefab;
    
@@ -22,11 +23,14 @@ public class CraftableAbilityUI : MonoBehaviour
 
    public void InjectInfo(CraftingRecipe newRecipe)
    {
+      //TODO: Don't use GetComponent later on
+      button = GetComponent<Button>();
+      button.onClick.AddListener(() => {CraftingUI.CraftRecipe(recipe); });
       recipe = newRecipe;
       recipeNameText.SetText(recipe.recipeName);
       CreateMaterials();
    }
-   void CreateMaterials()
+   private void CreateMaterials()
    {
       foreach (var ingredient in recipe.ingredientsList)
       {

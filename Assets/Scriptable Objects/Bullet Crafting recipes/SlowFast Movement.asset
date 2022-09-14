@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 748434c824291cc44934ef3f92ee34ad, type: 3}
-  m_Name: Basic Movement Recipe
+  m_Name: SlowFast Movement
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -23,17 +23,19 @@ MonoBehaviour:
     SerializationNodes:
     - Name: bulletAbility
       Entry: 7
-      Data: 0|BaseMovement, Assembly-CSharp
+      Data: 0|SlowFast, Assembly-CSharp
     - Name: bullet
       Entry: 6
       Data: 
     - Name: 
       Entry: 8
       Data: 
-  recipeName: Basic Movement
+  recipeName: Slow->Fast
   ingredientsList:
   - material: {fileID: 11400000, guid: ed7bc414cd12a274a8850a057764eb1e, type: 2}
     amount: 30
+  - material: {fileID: 0}
+    amount: 25
   gun: 0
   bullet: 1
   player: 0

@@ -48,18 +48,24 @@ public class PlayerInventory : SerializedMonoBehaviour
         }
     }
     
+    
+    public bool CheckMaterial(BaseMaterial material, int amount)
+    {
+        if (!materials.ContainsKey(material)) return false;
+        
+        return materials[material] >= amount;
+    }
+    
     public void GetExperience(int amount)
     {
         currentExp += amount;
-
         if (currentExp >= neededExp)
         {
-            Debug.Log("level up");
             currentLevel++;
             UIManager.instance.SetLevelText(currentLevel);
-            neededExp = (int)(neededExp * 1.5f);
+            neededExp = (int)(neededExp * 2.5f);
+            currentExp = 0;
         }
-        
         UIManager.instance.SetExpSlider(currentExp);
     }
 }

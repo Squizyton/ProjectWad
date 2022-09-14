@@ -20,8 +20,6 @@ public class PistolBullet : BaseBullet
 
         var test2 = (BaseBulletAbility) Activator.CreateInstance(test,transform,10f);
         
-        Debug.Log(test);
-        Debug.Log(test2);
         InjectAbility(AbilityType.Type.OnMove,test2);
         InjectAbility(AbilityType.Type.OnTick,new BaseTickAbility(transform,2f,true));
         

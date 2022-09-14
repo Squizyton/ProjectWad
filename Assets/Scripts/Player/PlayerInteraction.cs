@@ -31,15 +31,14 @@ public class PlayerInteraction : MonoBehaviour
         //Pickup-----
         var colliders = new Collider2D[MaxColliders];
         var colliderCount = Physics2D.OverlapCircleNonAlloc(transform.position, pickUpRange, colliders, pickUpMask);
+        
+        
         for(var i = 0; i < colliderCount; i++)
         {
-            
             var obj = colliders[i];
-            Debug.Log(obj.name);
             //TryGetComponent is better than GetComponent. Due to memory allocation
             obj.TryGetComponent<IPickupable>(out var pickup);
             pickup?.Pickup(transform);
-           
         }
         
         
@@ -65,8 +64,6 @@ public class PlayerInteraction : MonoBehaviour
     //TODO: Should this be a normal OnTriggerEnter2D or OverlapCircle??
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.layer);
-        
         if(!other.gameObject.layer.Equals(7)) return;
         
         if(other.TryGetComponent(out IInteractable interactable))

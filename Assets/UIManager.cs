@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
    public void SetExpSlider(float exp)
    {
       
-      expSlider.value += exp;
+      expSlider.value = exp;
    }
    
    public void SetExpSliderMax(float exp)

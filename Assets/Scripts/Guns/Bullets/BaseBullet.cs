@@ -82,6 +82,10 @@ public class BaseBullet : MonoBehaviour
 
     public void InjectAbility(AbilityType.Type type, BaseBulletAbility ability)
     {
+        
+        ability.bullet = transform;
+        
+        
         switch (type)
         {
             case AbilityType.Type.OnTick:

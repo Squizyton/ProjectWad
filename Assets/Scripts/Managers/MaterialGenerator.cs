@@ -22,7 +22,7 @@ public class MaterialGenerator : MonoBehaviour
     [SerializeField] private Transform container;
     
     //Generation will change
-    [Title("Testing Variables")] public GameObject testPrefab;
+    [Title("Testing Variables")] public List<GameObject> testPrefabs;
     private void Start()
     {
         instance = this;
@@ -39,7 +39,7 @@ public class MaterialGenerator : MonoBehaviour
 
             var randomPosition = new Vector3(Random.Range(bounds.bounds.min.x, bounds.bounds.max.x),
                 Random.Range(bounds.bounds.min.y, bounds.bounds.max.y),0);
-            var go = Instantiate(testPrefab, randomPosition,
+            var go = Instantiate(testPrefabs[Random.Range(0,testPrefabs.Count)], randomPosition,
                 Quaternion.identity, container);
         }
     }
