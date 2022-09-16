@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Crafting;
 using Guns.Abilities;
 using Player;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Guns
 //TODO make a gun controller at some point
@@ -27,7 +29,6 @@ namespace Guns
 
         [Title("Bullet Prefab")] [SerializeField]
         private Transform bulletSpawn;
-        [SerializeField,ReadOnly] private GameObject bulletPrefab;
         [SerializeField] private BaseBullet bullet;
 
 
@@ -50,7 +51,7 @@ namespace Guns
         private float _fireRateTimer;
         private float _reloadTimer;
         private bool _canFire;
-
+        
         //Cache a waitforseconds for performance
         private WaitForSeconds _reloadWait;
 
@@ -60,7 +61,9 @@ namespace Guns
         private void Start()
         {
             _reloadWait = new WaitForSeconds(reloadTime);
-            bullet = bulletPrefab.GetComponent<BaseBullet>();
+            
+            
+            _bulletAbilities.Clear();
         }
 
         public virtual void Fire()
@@ -81,22 +84,22 @@ namespace Guns
                 //Make a reload click sound
             }
         }
-
-
-
         public void Shoot()
         {
-               
-            var spawnedBullet = Instantiate(bullet,bulletSpawn.transform.position, Quaternion.identity);
+            
+            var spawnedBullet = Instantiate(bullet.gameObject, bulletSpawn.transform.position, Quaternion.identity);
+             spawnedBullet.TryGetComponent<BaseBullet>(out var bulletComponent);
                
             foreach(var ability in _bulletAbilities)
             {
-                spawnedBullet.InjectAbility(ability.ReturnType(),ability.ReturnAbility());
+                
+                bulletComponent.InjectAbility(ability.ReturnType(),ability.ReturnAbility());
             }
             //rotate the bullet towards the mouse on z-axis
                
             //TODO: make this neater
             var mousePos = GunRotation.GetMousePosition();
+            //TODO: could honestly probably just...use the forward transform of the spawner...
             var direction = (mousePos - bulletSpawn.position).normalized;
             var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
                
@@ -116,6 +119,7 @@ namespace Guns
 
         public virtual void Update()
         {
+            
             if (_isReloading) return;
 
             if (_canFire) return;
@@ -145,17 +149,41 @@ namespace Guns
 
         public void AddAbility(CraftingRecipe recipe)
         {
+            Debug.Log("Add ability");
             if (!recipe.bullet) return;
             var ability = recipe as BulletCraftingRecipe;
-            if (ability != null)
-                _bulletAbilities.Add(new AbilityStruct<BaseBulletAbility>(ability.type, ability.bulletAbility));
+            
+            if (ability == null) return;
+            
+            if (recipe.type == AbilityType.Type.OnMove)
+            {
+                var movementAbility = _bulletAbilities.FirstOrDefault(i => i.ReturnType() == AbilityType.Type.OnMove);
+                _bulletAbilities.Remove(movementAbility);
+            }
+
+            _bulletAbilities.Add(new AbilityStruct<BaseBulletAbility>(ability.type, ability.bulletAbility));
         }
 
 
+        
+        public List<AbilityStruct<BaseBulletAbility>> ReturnAbilities()
+        {
+            return _bulletAbilities;
+        }
+        
         [ContextMenu("Test Ability")]
         public void AddTestMovement()
         {
             _bulletAbilities.Add(new AbilityStruct<BaseBulletAbility>(AbilityType.Type.OnMove, new SlowFast(null,1)));
+            Debug.Log("Added SlowFast Movement");
+            
+        }
+
+        [ContextMenu("Test Hit Ability")]
+        public void TestHitAbility()
+        {
+            Debug.Log("Added BulletFan Ability");
+            _bulletAbilities.Add(new AbilityStruct<BaseBulletAbility>(AbilityType.Type.OnHit,new BulletFan(transform,1f)));
         }
     }
 

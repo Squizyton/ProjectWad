@@ -58,6 +58,7 @@ public class PlayerInventory : SerializedMonoBehaviour
     
     public void GetExperience(int amount)
     {
+        Debug.Log("Get exp");
         currentExp += amount;
         if (currentExp >= neededExp)
         {

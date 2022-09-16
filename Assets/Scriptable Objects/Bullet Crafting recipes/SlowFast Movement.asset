@@ -34,7 +34,7 @@ MonoBehaviour:
   ingredientsList:
   - material: {fileID: 11400000, guid: ed7bc414cd12a274a8850a057764eb1e, type: 2}
     amount: 30
-  - material: {fileID: 0}
+  - material: {fileID: 11400000, guid: f03dd04832823f1448a2a96831bc13d5, type: 2}
     amount: 25
   gun: 0
   bullet: 1

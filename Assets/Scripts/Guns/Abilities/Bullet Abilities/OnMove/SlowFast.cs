@@ -6,15 +6,15 @@ public class SlowFast : BaseBulletAbility
 {
     private float timer = 5f;
 
-    private  int newSpeed = 13;
-
+    private  int _newSpeed = 13;
+    private float _slowSpeed = .25f;
     public SlowFast(Transform transform, float speed)
     {
         bullet = transform;
         this.speed = speed;
     }
 
-    public override void OnHit(Collider hit)
+    public override void OnHit(Collider2D hit)
     {
         throw new System.NotImplementedException();
     }
@@ -31,16 +31,13 @@ public class SlowFast : BaseBulletAbility
 
     public override void OnMove()
     {
-
-        
-        //TODO: Fix newly spawned bullets running at the same time
         if (timer > 0f)
         {
             timer -= Time.deltaTime;
-            bullet.transform.Translate(Vector3.up * (speed * Time.deltaTime));
+            bullet.transform.Translate(Vector3.up * (_slowSpeed * Time.deltaTime));
         }else
         {
-            bullet.transform.Translate(Vector3.up * (newSpeed * Time.deltaTime));
+            bullet.transform.Translate(Vector3.up * (_newSpeed * Time.deltaTime));
         }
     }
 }

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 748434c824291cc44934ef3f92ee34ad, type: 3}
+  m_Name: BulletFanRecipe
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: bulletAbility
+      Entry: 7
+      Data: 0|BulletFan, Assembly-CSharp
+    - Name: bullet
+      Entry: 6
+      Data: 
+    - Name: bulletPrefab
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  recipeName: Bullet Fan
+  ingredientsList:
+  - material: {fileID: 11400000, guid: f03dd04832823f1448a2a96831bc13d5, type: 2}
+    amount: 1
+  - material: {fileID: 11400000, guid: ed7bc414cd12a274a8850a057764eb1e, type: 2}
+    amount: 1
+  gun: 0
+  bullet: 1
+  player: 0
+  type: 0

@@ -2,38 +2,91 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae89162-6cc1-4969-8a49-828b9d93c15b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Material Generators.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Material Generators/StoneMaterialGenerator.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Material Generators/StoneMaterialGenerator.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials/StonePickup.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials/StonePickup.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials/WoodMaterial.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Materials/WoodMaterial.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/SlowFast Movement.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/SlowFast Movement.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Materials/Stone.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Materials/Stone.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactables/MaterialSource.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactables/MaterialSource.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pickupables/MaterialPickup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Pickupables/MaterialPickup.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/ConsoleProDebug.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/ConsoleProDebug.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor Console Pro Documentation.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor Console Pro Documentation.pdf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor/ConsolePro.Editor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Editor/ConsolePro.Editor.dll.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/ConsoleProRemoteServer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/ConsoleProRemoteServer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/BaseChannel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/BaseChannel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/ConnectionRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/ConnectionRequest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/INetEventListener.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/INetEventListener.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Layers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Layers/Crc32cLayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Layers/Crc32cLayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Layers/PacketLayerBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Layers/PacketLayerBase.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Layers/XorEncryptLayer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Layers/XorEncryptLayer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/LiteNetLib.csproj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NatPunchModule.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NatPunchModule.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetConstants.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetConstants.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetDebug.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetDebug.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPacket.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPacketPool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPacketPool.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPeer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetPeer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetSocket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetSocket.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetStatistics.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetStatistics.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/NetUtils.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/ReliableChannel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/ReliableChannel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/SequencedChannel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/SequencedChannel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/CRC32C.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/CRC32C.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/FastBitConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/FastBitConverter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/INetSerializable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/INetSerializable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NetDataReader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NetDataReader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NetDataWriter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NetDataWriter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NetPacketProcessor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NetPacketProcessor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NetSerializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NetSerializer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NtpPacket.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NtpPacket.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NtpRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ConsolePro/Remote/LiteNetLib/Utils/NtpRequest.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/BulletFanRecipe.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/BulletFanRecipe.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnHit.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BangBangIdk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/CraftableUIPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CraftableUIPrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/Basic Movement Recipe.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/Basic Movement Recipe.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Crafting/CraftingRecipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Crafting/CraftingRecipe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/SlowFast Movement.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scriptable Objects/Bullet Crafting recipes/SlowFast Movement.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/BaseBulletAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/BaseBulletAbility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnMove/BaseMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnMove/BaseMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnMove/SlowFast.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnMove/SlowFast.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnTick/BaseTickAbility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Abilities/Bullet Abilities/OnTick/BaseTickAbility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Actual Guns/Pistol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Actual Guns/Pistol.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/BaseGun.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/BaseGun.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/BaseBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/BaseBullet.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/PistolBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Guns/Bullets/PistolBullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/AbilitiesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/AbilitiesManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/MaterialGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/MaterialGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pickupables/Pickupable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pickupables/Pickupable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerInventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerInventory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CraftableAbilityUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CraftableAbilityUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/CraftingUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CraftingUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Cainos/Prefab/Plant/PF Props Tree T2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Cainos/Prefab/Plant/PF Props Tree T2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/RiderScriptEditorPersistedState.asset" afterDir="false" />
     </list>
@@ -69,6 +122,7 @@
     <setting file="file://$PROJECT_DIR$/../RunGunPewPew/Assets/Scripts/Weapons/Guns/GunController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../RunGunPewPew/Assets/Scripts/Weapons/Guns/Pistol.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Third Person Pew Pew/Assets/Scripts/Player/ThirdPersonAimController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1332c534a8a44623b2e5cc943a0b790e157400/93/2d909151/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/27b5869c9c51417495f4c4b6f58ecfd71f800/17/09072f5e/Collider2D.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -146,6 +200,9 @@
       <workItem from="1662425211364" duration="1000" />
       <workItem from="1663006320114" duration="4707000" />
       <workItem from="1663100870760" duration="7667000" />
+      <workItem from="1663190890924" duration="941000" />
+      <workItem from="1663272337922" duration="6506000" />
+      <workItem from="1663351547661" duration="6883000" />
     </task>
     <servers />
   </component>

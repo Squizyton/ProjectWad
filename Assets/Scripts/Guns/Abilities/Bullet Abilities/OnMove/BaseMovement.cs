@@ -12,7 +12,7 @@ public class BaseMovement : BaseBulletAbility
         this.speed = speed;
     }
 
-    public override void OnHit(Collider hit)
+    public override void OnHit(Collider2D hit)
     {
         throw new System.NotImplementedException();
     }

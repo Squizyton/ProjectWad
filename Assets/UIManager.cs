@@ -21,9 +21,10 @@ public class UIManager : MonoBehaviour
    }
 
 
+   #region EXP
    public void SetExpSlider(float exp)
    {
-      
+      Debug.Log("SetExpSlider"); 
       expSlider.value = exp;
    }
    
@@ -42,4 +43,10 @@ public class UIManager : MonoBehaviour
    {
       expSlider.value = 0;
    }
+   #endregion
+   
+   #region Crafting
+   
+   
+   #endregion
 }

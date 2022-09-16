@@ -863,10 +863,11 @@ MonoBehaviour:
   reloadTime: 3
   accuracy: 0
   bulletSpawn: {fileID: 717044197}
-  bulletPrefab: {fileID: 8321633475209611981, guid: a0483c276de222c48ba6c73227af29b5, type: 3}
   bullet: {fileID: 8321633475209611977, guid: a0483c276de222c48ba6c73227af29b5, type: 3}
   bulletAmount: 0
   autoFire: 0
+  baseMovement: {fileID: 11400000, guid: e2af51f2bfe72fd4cb4e6d2840167c48, type: 2}
+  onHitTest: {fileID: 11400000, guid: 2546d70c893862f4593fe9eba4be018e, type: 2}
 --- !u!1 &784672378
 GameObject:
   m_ObjectHideFlags: 0
@@ -117880,7 +117881,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:

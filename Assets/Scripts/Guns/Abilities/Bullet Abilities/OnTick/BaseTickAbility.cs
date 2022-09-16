@@ -34,7 +34,7 @@ namespace Guns.Abilities.Bullet_Abilities.OnTick
         }
 
 
-        public override void OnHit(Collider hit)
+        public override void OnHit(Collider2D hit)
         {
             throw new System.NotImplementedException();
         }

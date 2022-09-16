@@ -10,6 +10,8 @@ public abstract class BaseBulletAbility
     protected float speed;
     protected int damage;
 
+    
+    
 
     public Transform bullet;
 
@@ -23,7 +25,7 @@ public abstract class BaseBulletAbility
     }
 
 
-    public abstract void OnHit(Collider hit);
+    public abstract void OnHit(Collider2D hit);
     public abstract void OnHit();
     public abstract void OnTick();
     public abstract void OnMove();
