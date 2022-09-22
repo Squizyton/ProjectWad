@@ -25,7 +25,7 @@ public class CraftableAbilityUI : MonoBehaviour
    {
       //TODO: Don't use GetComponent later on
       button = GetComponent<Button>();
-     //button.onClick.AddListener(() => {CraftingUI.CraftRecipe(recipe); });
+      button.onClick.AddListener(() => { CraftingUI.Instance.CraftRecipe(recipe); });
       recipe = newRecipe;
       recipeNameText.SetText(recipe.recipeName);
       CreateMaterials();

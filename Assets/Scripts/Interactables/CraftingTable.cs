@@ -10,7 +10,7 @@ namespace Interactables
 
         public void OnInteract()
         {
-            canvasGroup.alpha = 1;
+            UIManager.instance.CraftingPanel(true);
         }
     }
 }

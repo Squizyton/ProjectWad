@@ -1129,7 +1129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &939035646
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1176,7 +1176,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939035645}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -117513,6 +117513,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   expSlider: {fileID: 1327092983}
   levelText: {fileID: 2111507907}
+  craftingPanel: {fileID: 939035645}
 --- !u!1 &1036335466
 GameObject:
   m_ObjectHideFlags: 0
@@ -117745,6 +117746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   craftingRecipes:
   - {fileID: 11400000, guid: e2af51f2bfe72fd4cb4e6d2840167c48, type: 2}
+  - {fileID: 11400000, guid: 2546d70c893862f4593fe9eba4be018e, type: 2}
+  - {fileID: 11400000, guid: f04fdb701f5310c4080a5d336adf2ced, type: 2}
 --- !u!1 &1158282291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2055102311959635369, guid: 7277dd75e907b27448ec1de08238d0bb, type: 3}

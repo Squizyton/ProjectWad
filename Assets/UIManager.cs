@@ -15,6 +15,8 @@ public class UIManager : MonoBehaviour
 
    [SerializeField] private TextMeshProUGUI levelText;
 
+   [Title("Crafting Elements")]
+   [SerializeField]public GameObject craftingPanel;
    private void Awake()
    {
       instance = this;
@@ -46,6 +48,12 @@ public class UIManager : MonoBehaviour
    #endregion
    
    #region Crafting
+   
+   public void CraftingPanel(bool value)
+   {
+      craftingPanel.SetActive(value);
+   }
+   
    
    
    #endregion
